@@ -1,0 +1,141 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: "Segoe UI", Tahoma, sans-serif;
+    background: #f9f9f9;
+    color: #333;
+    line-height: 1.6;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    scrollbar-width: none;
+    -ms-overflow-style: none;
+}
+
+body::-webkit-scrollbar {
+    display: none;
+}
+
+html {
+    height: 100%;
+    overflow-y: auto;
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+
+}
+
+main {
+    margin-top: 20px;
+}
+
+header,
+main,
+footer {
+    max-width: 900px;
+    width: 100%;
+    background: #fff;
+    margin-bottom: 20px;
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+.profile {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.avatar {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+nav {
+    margin-top: 15px;
+}
+
+.nav-list {
+    display: flex;
+    gap: 15px;
+    list-style: none;
+    flex-wrap: wrap;
+}
+
+.nav-list a {
+    text-decoration: none;
+    color: #004080;
+    font-weight: bold;
+}
+
+.nav-list a:hover {
+    text-decoration: underline;
+}
+
+h1 {
+    font-size: 2rem;
+}
+
+h2 {
+    font-size: 1.4rem;
+    margin: 15px 0 10px;
+    color: #004080;
+    border-bottom: 2px solid #004080;
+    display: inline-block;
+    padding-bottom: 3px;
+}
+
+h3 {
+    margin-top: 10px;
+    color: #333;
+    font-size: 1.1rem;
+}
+
+.subtitle {
+    font-size: 1rem;
+    color: #555;
+}
+
+ul {
+    list-style: none;
+    padding-left: 0;
+}
+
+ul li {
+    margin-bottom: 8px;
+}
+
+.skill-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
+    gap: 10px;
+}
+
+.skill-list li {
+    background: #eef4ff;
+    padding: 8px 12px;
+    border-radius: 8px;
+    text-align: center;
+}
+
+footer {
+    text-align: center;
+    font-size: 0.9rem;
+    color: #777;
+}
+
+footer .logo {
+    height: 24px;
+    vertical-align: middle;
+    margin-left: 8px;
+}
